@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLSEC - Solana Security Checker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="SOLSEC Logo">
+                </div>
+                <div class="header-text">
+                    <h1>SOLSEC</h1>
+                    <p>Your Solana Token Security Checker</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="checker-form">
+            <h2>Check Token</h2>
+            <form id="tokenForm">
+                <div class="form-group">
+                    <label for="tokenAddress">Token Address:</label>
+                    <input type="text" id="tokenAddress" placeholder="Example: 4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU" required>
+                </div>
+                <button type="submit">Check</button>
+            </form>
+        </section>
+
+        <section class="results" id="resultsSection">
+            <h2>Results</h2>
+            <div id="resultsContent"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SOLSEC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html> 
